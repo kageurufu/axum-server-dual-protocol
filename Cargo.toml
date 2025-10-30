@@ -19,7 +19,7 @@ version = "0.7.0"
 default = ["rustls/aws-lc-rs"]
 
 [dependencies]
-axum-server = { version = "0.7.1", default-features = false, features = ["tls-rustls-no-provider"] }
+axum-server = { version = "0", default-features = false, features = ["tls-rustls-no-provider"] }
 bytes = { version = "1", default-features = false }
 http = "1"
 http-body-util = "0.1"
@@ -27,13 +27,13 @@ pin-project = "1"
 rustls = { version = "0.23", default-features = false }
 tokio = "1"
 tokio-rustls = { version = "0.26", default-features = false }
-tokio-util = "0.7.1"
+tokio-util = "0.7"
 tower-layer = "0.3"
 tower-service = "0.3"
 
 [dev-dependencies]
 anyhow = "1"
-axum = { version = "0.7", default-features = false }
+axum = { version = "0", default-features = false }
 futures-util = { version = "0.3", default-features = false }
 hyper = "1"
 rcgen = { version = "0.13", default-features = false, features = ["aws_lc_rs"] }
